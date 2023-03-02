@@ -24,9 +24,11 @@ deactivate server
     activate server
     server-->>browser: JS
     deactivate server
+    note over browser: JS sends GET Request for data
 
  browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     activate server
     server-->>browser: JSON data
     deactivate server
+    note over browser: Data rendered on page
  ```
